@@ -23,11 +23,13 @@ export default function Home() {
     });
   };
 
-  window.addEventListener("scroll", toggleVisible);
   return (
     <main id="" className={styles.main}>
       <section className={styles.navigation}>
         <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
           <li>
             <a href="#whatWeDo">What we do</a>
           </li>
