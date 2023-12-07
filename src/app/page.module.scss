@@ -2,6 +2,7 @@
   margin: auto;
   width: fit-content;
   position: relative;
+  max-width: 1920px;
 }
 
 .container {
@@ -62,7 +63,7 @@
   position: relative;
   overflow-y: hidden;
   height: 1080px;
-  background-image: url("/assets/images/forest.jpg");
+  background: no-repeat url("/assets/images/forest.jpg");
 }
 
 .triangle {
@@ -132,7 +133,6 @@
 
 .thirdSection {
   position: relative;
-  top: -50px;
   &Info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -143,6 +143,11 @@
 
     img {
       margin: auto;
+    }
+
+    &Group {
+      position: relative;
+      top: -50px;
     }
   }
   &Child {
@@ -156,14 +161,53 @@
   }
 }
 
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  &Info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px;
+    column-gap: 40px;
+  }
+
+  &Icon {
+    margin: 20px 0;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.generalInfo {
+  padding: 0 20px;
+  background-color: #303030;
+  color: white;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  &Info {
+    padding-top: 300px;
+    border-left: 1px solid white;
+    padding-left: 1rem;
+  }
+}
+
 .footer {
-    background-color: #303030;
+    background-color: #252525;
     text-align: center;
     height: 300px;
+    display: block;
 
     P {
         padding-top: 250px;
         color: beige;
+        margin: 0;
     }
 }
 
