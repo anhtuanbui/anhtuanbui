@@ -28,7 +28,6 @@ export default function Home() {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", toggleVisible);
   }
-  
   return (
     <main id="" className={styles.main}>
       <section className={styles.navigation}>
