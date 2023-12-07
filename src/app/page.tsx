@@ -91,7 +91,7 @@ export default function Home() {
 
       <section id="services" className={styles.thirdSection}>
         <Image
-          className={styles.mainImage}
+          className={styles.servicesImage}
           src="/assets/images/coding.jpg"
           alt="plants picture"
           width={1920}
@@ -148,8 +148,17 @@ export default function Home() {
 
       <section className={`${styles.myWork} ${styles.container}`}>
         <h2>MY WORK</h2>
-        <p>Website for <a className={styles.myWorkLink} href="http://paxform.com" target="_blank">Paxform</a> company</p>
-        <embed src="http://paxform.com" width={1440} height={800} />
+        <p>
+          Visit website{" "}
+          <a
+            className={styles.myWorkLink}
+            href="http://paxform.com"
+            target="_blank"
+          >
+            Paxform
+          </a>{" "}
+          for a preview
+        </p>
       </section>
 
       <section id="about" className={styles.about}>

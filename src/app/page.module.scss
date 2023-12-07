@@ -161,13 +161,18 @@
   }
 }
 
+.servicesImage {
+  object-fit: cover;
+}
+
 // mywork section
 .myWork {
   text-align: center;
+  margin-bottom: 10rem;
 
   &Link {
     text-decoration: none;
-    color: #303030;
+    color: #0960B2;
   }
 }
 
