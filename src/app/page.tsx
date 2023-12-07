@@ -29,7 +29,7 @@ export default function Home() {
     window.addEventListener("scroll", toggleVisible);
   }
   return (
-    <main id="" className={styles.main}>
+    <main id="main" className={styles.main}>
       <section className={styles.navigation}>
         <ul>
           <li>
