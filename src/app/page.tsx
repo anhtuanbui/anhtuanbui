@@ -146,6 +146,12 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`${styles.myWork} ${styles.container}`}>
+        <h2>MY WORK</h2>
+        <p>Website for <a className={styles.myWorkLink} href="http://paxform.com" target="_blank">Paxform</a> company</p>
+        <embed src="http://paxform.com" width={1440} height={800} />
+      </section>
+
       <section id="about" className={styles.about}>
         <div className={styles.generalInfo}>
           <h2>About me</h2>

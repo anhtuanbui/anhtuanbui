@@ -161,6 +161,16 @@
   }
 }
 
+// mywork section
+.myWork {
+  text-align: center;
+
+  &Link {
+    text-decoration: none;
+    color: #303030;
+  }
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
