@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="viewport" content="viewport-fit=cover" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
