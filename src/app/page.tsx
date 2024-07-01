@@ -118,7 +118,7 @@ export default function Home() {
             <div className="basis-1/2">
               <p className="leading-7 mb-3 text-justify">
                 Skilled Web Developer and IT Support professional based in
-                Bankstown, NSW, with a Bachelor of Information Technology from
+                Sydney, NSW, with a Bachelor of Information Technology from
                 King’s Own Institute. Led projects, including developing a
                 public website for Paxform using ReactJS and WordPress.
                 Proficient in programming languages such as C#, Python, Java,
