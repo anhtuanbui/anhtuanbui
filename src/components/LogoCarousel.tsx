@@ -75,7 +75,8 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
                         alt={logo.alt}
                         width={logo.width}
                         height={logo.height}
-                        className={`mx-${spacing}`}
+                        style={{margin: "0px 40px"}}
+                        // className={`mx-${spacing}`}
                     />
 
                 ))}
