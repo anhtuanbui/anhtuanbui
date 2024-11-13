@@ -76,7 +76,6 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
                         width={logo.width}
                         height={logo.height}
                         className={`mx-${spacing}`}
-                        priority={index < 5} // Prioritize loading first few logos
                     />
 
                 ))}
