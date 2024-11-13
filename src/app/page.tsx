@@ -19,6 +19,84 @@ import pythonLogo from "../../public/assets/logos/python-logo-black-and-white.pn
 import javaLogo from "../../public/assets/logos/java.png";
 import nextjsLogo from "../../public/assets/logos/next-js.svg";
 import tailwindLogo from "../../public/assets/logos/tailwind-css.svg";
+import { useEffect } from "react";
+
+import LogoCarousel from '@/components/LogoCarousel';
+
+const size = 64;
+
+const companyLogos = [
+  {
+    id: 1,
+    imageUrl: "/assets/logos/HTML5_1Color_Black.png",
+    alt: "Google",
+    width: size,
+    height: size
+  },
+  {
+    id: 2,
+    imageUrl: "/assets/logos/css3-logo-black-and-white.png",
+    alt: "Microsoft",
+    width: size,
+    height: size
+  },
+  {
+    id: 3,
+    imageUrl: "/assets/logos/csharp.png",
+    alt: "Apple",
+    width: size,
+    height: size
+  },
+  {
+    id: 4,
+    imageUrl: "/assets/logos/aspfe1.png",
+    alt: "Amazon",
+    width: size,
+    height: size
+  },
+  {
+    id: 5,
+    imageUrl: "/assets/logos/typescript.svg",
+    alt: "Meta",
+    width: size,
+    height: size
+  },
+  {
+    id: 6,
+    imageUrl: "/assets/logos/logo-js-icon-2048x2048-ptuzd8a3.png",
+    alt: "Meta",
+    width: size,
+    height: size
+  },
+  {
+    id: 7,
+    imageUrl: "/assets/logos/python-logo-black-and-white.png",
+    alt: "Meta",
+    width: size,
+    height: size
+  },
+  {
+    id: 8,
+    imageUrl: "/assets/logos/java.png",
+    alt: "Meta",
+    width: size,
+    height: size
+  },
+  {
+    id: 9,
+    imageUrl: "/assets/logos/next-js.svg",
+    alt: "Meta",
+    width: size,
+    height: size
+  },
+  {
+    id: 10,
+    imageUrl: "/assets/logos/tailwind-css.svg",
+    alt: "Meta",
+    width: size,
+    height: size
+  },
+];
 
 export default function Home() {
   var year = new Date().getFullYear();
@@ -35,57 +113,32 @@ export default function Home() {
             <h1 className="text-8xl md:text-6xl sm:text-4xl font-bold border-solid border-y-2 border-black py-4 tracking-widest">
               PORTFOLIO
             </h1>
-            <span className="absolute sm:text-sm -bottom-3 sm:-bottom-2 left-1/2 transform -translate-x-1/2 bg-[#FBF8F2] px-10 sm:px-4">
+            <span className="absolute sm:text-sm -bottom-3 sm:-bottom-2 left-1/2 transform -translate-x-1/2 bg-[#FBF8F2] px-10 sm:px-4 whitespace-nowrap">
               Anh Tuan Bui
             </span>
           </div>
         </div>
       </section>
 
-      <section id="tech" className="py-20 bg-[#EFEFEF]">
-        <div className="container mx-auto grid grid-cols-10 md:grid-cols-5 sm:grid-cols-2 gap-10 sm:gap-4 items-center px-8 sm:px-2">
-          <Image src={htmlLogo} alt="html logo"></Image>
-          <Image src={cssLogo} alt="css logo"></Image>
-          <Image
-            src={jsLogo}
-            alt="javascript logo"
-            className="rounded-2xl"
-          ></Image>
-          <Image
-            src={tsLogo}
-            alt="typescript logo"
-            className="rounded-2xl"
-          ></Image>
-          <Image
-            src={aspLogo}
-            alt="asp.net logo"
-            className="rounded-2xl"
-          ></Image>
-          <Image src={csharpLogo} alt="c# logo"></Image>
-          <Image src={pythonLogo} alt="python logo"></Image>
-          <Image src={javaLogo} alt="java logo" className="rounded-2xl"></Image>
-          <Image
-            src={nextjsLogo}
-            alt="nextjs logo"
-            className="rounded-2xl"
-          ></Image>
-          <Image
-            src={tailwindLogo}
-            alt="tailwind logo"
-            className="rounded-2xl"
-          ></Image>
-        </div>
+      <section id="tech" className="py-20 bg-[#EFEFEF] mb-10">
+        <LogoCarousel
+          logos={companyLogos}
+          speed={40}
+          spacing={12}
+          logoHeight={size}
+        />
+
       </section>
 
       <section
         id="projects"
-        className="container mx-auto px-8 sm:px-2 py-40 md:py-20 sm:py-20"
+        className="container mx-auto px-8 sm:px-2 py-size md:py-20 sm:py-16 lg:py-16 xl:py-20"
       >
         <h2 className="text-2xl font-bold text-center">Projects</h2>
         <p className="text-center">I got involved</p>
         <div className="grid grid-cols-3 sm:grid-cols-1 my-10 gap-20 md:gap-10">
           <ProjectCard
-            url="paxform.com"
+            url="https://paxform.com/"
             image={paxformScreenshot}
             name="Paxform"
             description="A landing page for Paxform which I created when I was working there."
