@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 import Marquee from "react-fast-marquee";
 
@@ -75,8 +75,8 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
                         alt={logo.alt}
                         width={logo.width}
                         height={logo.height}
-                        style={{margin: "0px 40px"}}
-                        // className={`mx-${spacing}`}
+                        style={{ margin: "0px 40px" }}
+                    // className={`mx-${spacing}`}
                     />
 
                 ))}

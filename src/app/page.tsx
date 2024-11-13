@@ -1,25 +1,13 @@
 import { NavBar } from "@/components/NavBar";
 import { ProjectCard } from "@/components/ProjectCard";
 import Image from "next/image";
-import Link from "next/link";
 
-import paxformScreenshot from "../../public/assets/images/paxform screenshot.png";
 import ipAddressTrackerScreenshot from "../../public/assets/images/ip address tracker screenshot.png";
+import paxformScreenshot from "../../public/assets/images/paxform screenshot.png";
 import urlShorteningScreenshot from "../../public/assets/images/URL shortening screenshot.png";
 
 import selfPhoto from "../../public/assets/images/self photo.jpg";
 
-import aspLogo from "../../public/assets/logos/aspfe1.png";
-import csharpLogo from "../../public/assets/logos/csharp.png";
-import htmlLogo from "../../public/assets/logos/HTML5_1Color_Black.png";
-import cssLogo from "../../public/assets/logos/css3-logo-black-and-white.png";
-import tsLogo from "../../public/assets/logos/typescript.svg";
-import jsLogo from "../../public/assets/logos/logo-js-icon-2048x2048-ptuzd8a3.png";
-import pythonLogo from "../../public/assets/logos/python-logo-black-and-white.png";
-import javaLogo from "../../public/assets/logos/java.png";
-import nextjsLogo from "../../public/assets/logos/next-js.svg";
-import tailwindLogo from "../../public/assets/logos/tailwind-css.svg";
-import { useEffect } from "react";
 
 import LogoCarousel from '@/components/LogoCarousel';
 
