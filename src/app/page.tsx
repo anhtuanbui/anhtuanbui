@@ -120,7 +120,7 @@ export default function Home() {
 
       <section
         id="projects"
-        className="container mx-auto px-8 sm:px-2 py-size md:py-20 sm:py-16 lg:py-16 xl:py-20"
+        className="container mx-auto px-8 sm:px-2 py-size py-10"
       >
         <h2 className="text-2xl font-bold text-center">Projects</h2>
         <p className="text-center">I got involved</p>
