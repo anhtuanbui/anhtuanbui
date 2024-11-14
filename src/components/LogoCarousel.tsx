@@ -60,7 +60,7 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
 
     const logos = externalLogos || defaultLogos;
     // Triple the logos to create seamless infinite scroll
-    const extendedLogos = [...logos];
+    const extendedLogos = [...logos, ...logos, ...logos];
 
     return (
         <div className="w-full relative">
