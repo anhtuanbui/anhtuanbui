@@ -10,6 +10,7 @@ import selfPhoto from "../../public/assets/images/self photo.jpg";
 
 
 import LogoCarousel from '@/components/LogoCarousel';
+import Link from "next/link";
 
 const size = 64;
 
@@ -95,10 +96,10 @@ export default function Home() {
       <section id="portfolio">
         <div className="flex h-screen justify-center bg-[#FBF8F2] items-center">
           <div className="relative">
-            <span className="absolute sm:text-sm -top-3 sm:-top-2 left-1/2 transform -translate-x-1/2 bg-[#FBF8F2] px-10 sm:px-4">
+            <span className="absolute sm:text-sm -top-3 sm:-top-2 left-1/2 transform -translate-x-1/2 bg-[#FBF8F2] px-10 sm:px-4 whitespace-nowrap">
               {year}
             </span>
-            <h1 className="text-8xl md:text-6xl sm:text-4xl font-bold border-solid border-y-2 border-black py-4 tracking-widest">
+            <h1 className="text-8xl md:text-6xl sm:text-4xl font-bold border-solid border-y-2 border-black py-4 tracking-widest whitespace-nowrap">
               PORTFOLIO
             </h1>
             <span className="absolute sm:text-sm -bottom-3 sm:-bottom-2 left-1/2 transform -translate-x-1/2 bg-[#FBF8F2] px-10 sm:px-4 whitespace-nowrap">
@@ -150,11 +151,13 @@ export default function Home() {
           <h2 className="font-bold text-center text-2xl">About Me</h2>
           <div className="flex sm:flex-col gap-20 mt-10">
             <div className="basis-1/2 flex justify-center">
-              <Image
-                src={selfPhoto}
-                alt="photo of myself"
-                className="w-1/2 md:w-full object-cover rounded-full overflow-hidden"
-              ></Image>
+              <Link className="w-1/2 md:w-full" href="https://www.linkedin.com/in/anhtuan-bui/">
+                <Image
+                  src={selfPhoto}
+                  alt="photo of myself"
+                  className=" object-cover rounded-full overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+                ></Image>
+              </Link>
             </div>
             <div className="basis-1/2">
               <p className="leading-7 mb-3 text-justify">
