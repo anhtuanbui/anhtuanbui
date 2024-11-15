@@ -60,13 +60,13 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
 
     const logos = externalLogos || defaultLogos;
     // Triple the logos to create seamless infinite scroll
-    const extendedLogos = [...logos, ...logos, ...logos];
+    const extendedLogos = [...logos];
 
     return (
         <div className="w-full relative">
             {/* Gradient overlay on left */}
             <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#EFEFEF] to-transparent z-10" />
-            <Marquee speed={speed}>
+            <Marquee speed={speed} autoFill={true}>
                 {extendedLogos.map((logo, index) => (
 
                     <Image
