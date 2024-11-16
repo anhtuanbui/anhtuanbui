@@ -3,11 +3,14 @@
 import Image from "next/image";
 import burgerBarIcon from "../../public/assets/icons/burger-bar.png";
 import xIcon from "../../public/assets/icons/close.png";
-import logo from "../../public/assets/icons/star.png";
 import { NavItem } from "./NavItem";
 
 import { Drawer } from "vaul";
 import Link from "next/link";
+
+import { Pirata_One } from "next/font/google";
+
+const pirataOne = Pirata_One({ subsets: ['latin'] , weight: "400"})
 
 export const NavBar = () => {
   const navItems = [
@@ -28,8 +31,9 @@ export const NavBar = () => {
     <nav className="bg-[#FBF8F2] fixed w-screen z-40">
       <div className="container mx-auto flex items-center py-2 px-8 sm:px-2 sm:justify-between">
         <div id="logo">
-          <Link href="/">
-            <Image src={logo} alt="logo" width={50} height={50} />
+          <Link href="/" className={`${pirataOne.className} text-5xl`}>
+            ATB
+            {/* <Image src={logo} alt="logo" width={50} height={50} /> */}
           </Link>
         </div>
         <div id="nav-link" className="ml-10 sm:ml-2">
