@@ -68,16 +68,16 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
             <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#EFEFEF] to-transparent z-10" />
             <Marquee speed={speed} autoFill={true}>
                 {extendedLogos.map((logo, index) => (
-
-                    <Image
-                        key={index}
-                        src={logo.imageUrl}
-                        alt={logo.alt}
-                        width={logo.width}
-                        height={logo.height}
-                        style={{ margin: "0px 40px" }}
-                    // className={`mx-${spacing}`}
-                    />
+                    <img src={logo.imageUrl} className='w-12 mx-12' alt={logo.alt} key={index}/>
+                    // <Image
+                    //     key={index}
+                    //     src={logo.imageUrl}
+                    //     alt={logo.alt}
+                    //     width={logo.width}
+                    //     height={logo.height}
+                    //     style={{ margin: "0px 40px" }}
+                    // // className={`mx-${spacing}`}
+                    // />
 
                 ))}
             </Marquee>
