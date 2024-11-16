@@ -8,9 +8,8 @@ import urlShorteningScreenshot from "../../public/assets/images/URL shortening s
 
 import selfPhoto from "../../public/assets/images/self photo.jpg";
 
-
-import LogoCarousel from '@/components/LogoCarousel';
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 const size = 64;
 
@@ -110,12 +109,21 @@ export default function Home() {
       </section>
 
       <section id="tech" className="py-20 bg-[#EFEFEF]">
-        <LogoCarousel
-          logos={companyLogos}
-          speed={40}
-          spacing={12}
-          logoHeight={size}
-        />
+
+        <Marquee speed={40} autoFill={true} gradient={true} gradientColor="#EFEFEF" gradientWidth={128}>
+          {companyLogos.map((logo, index) => (
+            <Image
+              key={index}
+              src={logo.imageUrl}
+              alt={logo.alt}
+              width={logo.width}
+              height={logo.height}
+              className={`mx-12`}
+              loading='eager'
+            />
+
+          ))}
+        </Marquee>
 
       </section>
 
