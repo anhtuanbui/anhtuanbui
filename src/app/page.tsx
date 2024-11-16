@@ -109,7 +109,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="tech" className="py-20 bg-[#EFEFEF] mb-10">
+      <section id="tech" className="py-20 bg-[#EFEFEF]">
         <LogoCarousel
           logos={companyLogos}
           speed={40}
@@ -121,11 +121,11 @@ export default function Home() {
 
       <section
         id="projects"
-        className="container mx-auto px-8 sm:px-2 py-size py-10"
+        className="container mx-auto px-8 sm:px-2 py-size py-20"
       >
         <h2 className="text-2xl font-bold text-center">Projects</h2>
         <p className="text-center">I got involved</p>
-        <div className="grid grid-cols-3 sm:grid-cols-1 my-10 gap-20 md:gap-10">
+        <div className="grid grid-cols-3 sm:grid-cols-1 mt-10 gap-20 md:gap-10">
           <ProjectCard
             url="https://paxform.com/"
             image={paxformScreenshot}
