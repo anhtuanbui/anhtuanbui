@@ -1,6 +1,6 @@
 # welcome to my hub
 
-a passionate developer
+a somewhat developer
 
 **visits**
 - linkedin: https://www.linkedin.com/in/anhtuan-bui/
